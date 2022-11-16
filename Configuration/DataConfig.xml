@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <!-- Timeout -->
+    <Timeout>5</Timeout>
+
+    <!-- Size data.csv -->
+    <RowsCSV>5</RowsCSV>
+    <ColumnsCSV>4</ColumnsCSV>
+
+    <!-- General -->
+<!--    <PlatformName>web</PlatformName>-->
+<!--    <PlatformName>mobile</PlatformName>-->
+<!--    <PlatformName>api</PlatformName>-->
+<!--    <PlatformName>electron</PlatformName>-->
+<!--    <PlatformName>desktop</PlatformName>-->
+
+    <!-- Web -->
+    <BrowserName>chrome</BrowserName>
+    <url>https://atid.store/</url>
+    <ImageRepo>C:\\Automation\\FinalProjectShoshanaBenhamou\\ImageRepository\\</ImageRepo>
+
+    <!-- Mobile -->
+    <UDID>RF8R51KYM6W</UDID>
+    <AppPackage>com.experitest.ExperiBank</AppPackage>
+    <AppActivity>.LoginActivity</AppActivity>
+    <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+
+    <!-- Data Driven Testing -->
+    <DDTFile>C:\\Automation\\FinalProjectShoshanaBenhamou\\DDTFiles\data.csv</DDTFile>
+
+    <!-- Data Message Contact Us Set -->
+    <ContactName>Israel Israeli</ContactName>
+    <ContactEmail>israel@yahoo.fr</ContactEmail>
+    <ContactMessage>This is a selenium data provider test</ContactMessage>
+
+    <!-- Api -->
+    <urlAPI>https://l761dniu80.execute-api.us-east-2.amazonaws.com/default/exercise_api</urlAPI>
+
+    <!-- Electron -->
+    <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
+    <ElectronAppPath>C:/Users/sbenhamou.sephira/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
+
+    <!-- Desktop -->
+    <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>
+    <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
+
+    <!-- Database -->
+    <DBURL>jdbc:mysql://remotemysql.com:3306/ZheCBruat7</DBURL>
+    <DBUserName>ZheCBruat7</DBUserName>
+    <DBPassWord>G66SLUKiWk</DBPassWord>
+    <query>SELECT name, mail, message FROM Contacts WHERE id = '1'</query>
+
+</Environment>
