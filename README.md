@@ -47,7 +47,7 @@ The project is an example of infrastructure for automation testing of different 
 
 ---
 
-### **_List of applications were used in this project:_**###
+### **_List of applications were used in this project:_**
 
 <details>
 
