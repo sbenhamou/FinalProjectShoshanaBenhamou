@@ -1,6 +1,7 @@
 ## Full Stack Automation Final Project
 
-[Short Video - Demonstration](C:/Users/sbenhamou/Documents/Wondershare Filmora 9/Recorded/10076985/VID_20221123_172708.zip)
+[Short Video - Demonstration](https://github.com/sbenhamou/FinalProjectShoshanaBenhamou/files/10078275/VID_20221123_172708.zip)
+
 
 This project was created to finalize the knowledge and skills acquired at the end of my Full Stack automation course at Atid College.
 
