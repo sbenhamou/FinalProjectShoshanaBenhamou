@@ -17,7 +17,6 @@ public class ExperiBankMobile extends CommonOps {
     @Description("This test verifies that the login success")
     public void test01_verifyLogin(){
         MobileFlows.loginExperiBank("company","company");
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         MobileActions.visibilityOfMobileElement(experiHome.btn_logout);
     }
 
@@ -27,7 +26,6 @@ public class ExperiBankMobile extends CommonOps {
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         String firstAmount = MobileFlows.getBalanceAmount();
         MobileFlows.makePaymentSelectCountry("0102030405","Shoshana","1",2);
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         Verifications.verifyResult(Integer.toString(Integer.parseInt(firstAmount)-1), MobileFlows.getBalanceAmount());
     }
 
@@ -37,7 +35,6 @@ public class ExperiBankMobile extends CommonOps {
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         String firstAmount = MobileFlows.getBalanceAmount();
         MobileFlows.cancelPaymentFillCountry("0102030405","Shoshana","1","Italy");
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         Verifications.verifyResult(firstAmount, MobileFlows.getBalanceAmount());
     }
 }
