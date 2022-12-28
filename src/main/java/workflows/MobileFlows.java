@@ -24,7 +24,6 @@ public class MobileFlows extends CommonOps {
         MobileActions.updateText(experiPayment.txt_amount, amount);
         MobileActions.tap(experiPayment.btn_country);
         MobileActions.tap(country.list_country.get(num));
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         MobileActions.tap(experiPayment.btn_payment);
         MobileActions.tap(experiPayment.btn_confirmPayment);
         }
@@ -36,7 +35,6 @@ public class MobileFlows extends CommonOps {
         MobileActions.updateText(experiPayment.txt_name, name);
         MobileActions.updateText(experiPayment.txt_amount, amount);
         MobileActions.updateText(experiPayment.txt_country, country);
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         MobileActions.tap(experiPayment.btn_payment);
         MobileActions.tap(experiPayment.btn_cancelPayment);
         MobileActions.tap(experiPayment.btn_cancel);
