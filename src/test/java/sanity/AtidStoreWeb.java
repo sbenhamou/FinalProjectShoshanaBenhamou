@@ -19,7 +19,6 @@ public class AtidStoreWeb extends CommonOps {
     @Description("This test verifies the Shop Now button")
     public void test01_verifyShopNowButton(){
         UIActions.click(homePage.btn_shopNow);
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
         Verifications.verifyUrlPage("https://atid.store/store/");
     }
 
@@ -36,7 +35,6 @@ public class AtidStoreWeb extends CommonOps {
     public void test03_verifyArticleNumber()
     {
         WebFlows.getProductList("Tshirt");
-        System.out.println(storePage.list_product.size());
         Verifications.verifyResult(Integer.toString(storePage.list_product.size()),"7");
     }
 
